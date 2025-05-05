@@ -97,7 +97,7 @@ public class Main {
         String path = scan.nextLine();
         String[] files = Funciones.showListFiles(path);
         if (files.length == 0) {
-            System.out.println("No hay archivos o ruta no válida.");
+            System.out.println("No hay archivos o ruta no valida.");
         } else {
             for (String f : files) {
                 System.out.println(f);
@@ -142,7 +142,7 @@ public class Main {
         String path = scan.nextLine();
         System.out.print("Nombre del archivo: ");
         String fileName = scan.nextLine();
-        System.out.println("Numero de letras en el archivo: " + Funciones.countChars(path, fileName));
+        System.out.println("Numero de palabras en el archivo: " + Funciones.countChars(path, fileName));
     }
 
     public static void conversionPDF() throws IOException {
@@ -152,7 +152,7 @@ public class Main {
         String fileName = scan.nextLine();
         if (fileName.contains(".txt")) {
             Funciones.printPDF(path, fileName);
-            System.out.println("PDF ha sido creado con éxito.");
+            System.out.println("PDF ha sido creado con exito.");
             System.out.println("Archivo nuevo: " + Funciones.showFile(path, fileName));
         }
     }
@@ -162,7 +162,7 @@ public class Main {
         String path = scan.nextLine();
         System.out.print("Nombre del archivo: ");
         String fileName = scan.nextLine();
-        System.out.println("Contenido del archivo " + Funciones.showFile(path, fileName));
+        System.out.println("Contenido del archivo:  " + Funciones.showFile(path, fileName));
     }
 
     public static void intercambiarPalabras() throws IOException {

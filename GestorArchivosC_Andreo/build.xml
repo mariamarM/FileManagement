@@ -12,6 +12,12 @@
 <project name="GestorArchivosC_Andreo" default="default" basedir=".">
     <description>Builds, tests, and runs the project GestorArchivosC_Andreo.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <target name="-post-compile">
+    <copy todir="${build.classes.dir}">
+        <fileset dir="lib"/>
+    </copy>
+</target>
     <!--
 
     There exist several targets which are by default empty and which can be 

@@ -14,7 +14,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
-
+import org.apache.fontbox.FontBoxFont;
+import org.apache.fontbox.type1.Type1Font;
 /**
  *
  * @author andre
@@ -173,7 +174,7 @@ public class Funciones {
 
         PDPageContentStream contentStream = new PDPageContentStream(document, page);
         contentStream.beginText();
-        contentStream.setFont(PDType1Font.HELVETICA, 12);
+    //    contentStream.setFont(PDType1Font.HELVETICA, 12);
         contentStream.newLineAtOffset(50, 700);
 
         String[] lines = archivoNormal.split("\n");
